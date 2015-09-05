@@ -18,4 +18,10 @@ RUN make install
 
 WORKDIR /
 
+# lua env
+ENV WITH_LUA /usr/local/
+ENV LUA_LIB /usr/local/lib/lua
+ENV LUA_INCLUDE /usr/local/include
+
+
 RUN rm /lua-$LUA_VERSION -rf
